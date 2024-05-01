@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -f vencent ./hello 
+chown -R vencent ./hello 
