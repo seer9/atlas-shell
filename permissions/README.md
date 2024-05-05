@@ -1,1 +1,1 @@
-This is going to switch you to betty
+This directory is a collection of scripts for specific use.
