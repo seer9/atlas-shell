@@ -1,2 +1,2 @@
 #!/bin/bash
-export TRUEKNOWLEDGE=$(($TRUEKNOWLEDGE+128))\n
+export TRUEKNOWLEDGE=0 & $(($TRUEKNOWLEDGE+128))\n
