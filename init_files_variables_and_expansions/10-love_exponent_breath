@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($BREATHE ** $LOVE))
+(print $BREATHE ** $LOVE | bc)
