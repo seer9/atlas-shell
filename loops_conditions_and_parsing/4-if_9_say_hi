@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #while loop that prints Hi on the 9th execution.
 dog=0
-while [ $dog -ge 10 ]; do
+while [ $dog -gt 10 ]; do
 	echo "Best School";
 if [ $dog = 9 ]; then 
 	echo "Hi";
