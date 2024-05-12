@@ -1,2 +1,2 @@
 #!/bin/bash
-echo {a..z}{a..z} | find -ignore_readdir_race "oo" | tr " " "\n"
+echo {a..z}{a..z} | grep -v "oo" | tr " " "\n"
