@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #this is an until loop
-run=1
-until [ $run -gt 10 ]
+run=0
+until [$run -ge 10]
 do
 echo "Best School"
-$(($run++))
+((run++))
 done  
