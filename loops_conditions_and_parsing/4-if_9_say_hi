@@ -3,7 +3,8 @@
 dog=0
 while [ $dog -lt 10 ]; do
 	echo "Best School";
-if [ $dog = 9 ]; then 
-	echo "Hi";
-((dog++))
-fi; done
+	if [ $dog = 9 ]; then 
+		echo "Hi";
+	fi 
+	((dog++))
+done
