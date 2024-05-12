@@ -4,5 +4,5 @@ run=1
 until [$run -gt 10]
 do
 echo "Best School"
-((run++))
+$((run++))
 done  
