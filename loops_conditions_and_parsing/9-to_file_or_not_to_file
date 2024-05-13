@@ -13,8 +13,14 @@ if [ -e "$cool" ]; then
         else
             echo "$cool file is empty"
         fi
-    else
-        echo "$cool is not a regular file"
+
+	elif [ -d "$cool" ]' then
+	
+	    echo "$cool is a directory"
+    
+	else
+        
+	echo "$cool is not a regular file or a directory"
     fi
 else
     echo "$cool file does not exist"
