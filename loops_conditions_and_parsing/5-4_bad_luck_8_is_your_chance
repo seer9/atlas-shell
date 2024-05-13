@@ -9,6 +9,6 @@ while [ $i -lt 10 ]; do
                 echo "good luck"
         else
                 echo "Best School";
-        f
-((i++))
+        fi
+((i++));
 done 
