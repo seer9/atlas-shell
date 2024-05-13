@@ -1,23 +1,27 @@
 #!/usr/bin/env bash
-# This script tells you specific info about a file or directory named school.
+#This script tells you specific info about a file or directory named school.
 cool="school"
 
 if [ -e "$cool" ]; then
+    
     echo "$cool file exists"
-
-    if [ -f "$cool" ]; then
+    
+    if [ -d "$cool" ]; then
+        echo "$cool is a directory"
+    elif [ -f "$cool" ]; then
         echo "$cool is a regular file"
-
+        
         if [ -s "$cool" ]; then
             echo "$cool file is not empty"
         else
             echo "$cool file is empty"
         fi
-    elif [ -d "$cool" ]; then
-        echo "$cool is a directory"
+        
     else
         echo "$cool is not a regular file or a directory"
     fi
+    
 else
     echo "$cool file does not exist"
 fi
+
