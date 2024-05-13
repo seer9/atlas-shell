@@ -12,7 +12,6 @@ if [ -e $cool ]; then
 
                 echo "$cool is a regular file"; fi
 
-        fi
 
         if [ -s $cool ]; then
 	
@@ -20,7 +19,7 @@ if [ -e $cool ]; then
 
                 echo "school file is not empty";
                 
-
+	
         else
 
                 echo "$cool file does not exist"
