@@ -8,16 +8,18 @@ if [ -e $cool ]; then
         fi
                 
 
-        if [ -s $cool ]; then
-
-                echo "school file is empty"; else
-
-                echo "school file is not empty"; 
-        fi
-
         if [ -f $cool ]; then
 
-                echo "$cool is a regular file";
+                echo "$cool is a regular file"; fi
+
+        fi
+
+        if [ -s $cool ]; then
+	
+		echo "school file is empty"; else
+
+                echo "school file is not empty";
+                
 
         else
 
