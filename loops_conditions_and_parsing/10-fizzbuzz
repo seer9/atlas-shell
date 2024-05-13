@@ -9,7 +9,7 @@ for ((_ = 1; _ <= 100)); do
         echo "Buzz"
     else
         echo "$_"
+    ((_++))
     fi
-((_++))
 done
 
