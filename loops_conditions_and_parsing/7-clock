@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#this is a while loop that functions as a clock
+hr=0
+min=1
+while [ $hr -le 12 ]; do
+	echo "Hour:$hr"
+	while [ $min -le 60 ]; do
+	echo "$min"
+	((min++))
+done
+	((hr++))
+done
