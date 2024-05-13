@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#this script is going to find a file and then target the '-' then cut. then we specify a field after the delimiter and all subsequent fields or characters.
 
 for i in *; do 
 	echo "$i" | cut -d "-" -f 2-
