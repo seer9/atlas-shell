@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#FIZZBUZZZZZ
+for ((_ = 1; _ <= 100)); do
+    if ((_ % 3 == 0)) && ((_ % 5 == 0)); then
+        echo "FizzBuzz"
+    elif ((_ % 3 == 0)); then
+        echo "Fizz"
+    elif ((_ % 5 == 0)); then
+        echo "Buzz"
+    else
+        echo "$_"
+    fi
+((_++))
+done
+
