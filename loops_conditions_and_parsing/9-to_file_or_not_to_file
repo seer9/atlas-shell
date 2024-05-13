@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#this script tells you specific info about a file.
+# This script tells you specific info about a file or directory named school.
 cool="school"
 
 if [ -e "$cool" ]; then
@@ -13,16 +13,11 @@ if [ -e "$cool" ]; then
         else
             echo "$cool file is empty"
         fi
-
-	elif [ -d "$cool" ]' then
-	
-	    echo "$cool is a directory"
-    
-	else
-        
-	echo "$cool is not a regular file or a directory"
+    elif [ -d "$cool" ]; then
+        echo "$cool is a directory"
+    else
+        echo "$cool is not a regular file or a directory"
     fi
 else
     echo "$cool file does not exist"
 fi
-
