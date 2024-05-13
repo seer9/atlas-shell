@@ -4,19 +4,24 @@ cool=school
 
 if [ -e $cool ]; then
 
-        	echo "$cool file exists";
+                echo "$cool file exists";
+        fi
+                
 
-	if [ -s $cool ]; then
+        if [ -s $cool ]; then
 
-        	echo "school file is empty"; else
+                echo "school file is empty"; else
 
-        	echo "school file is not empty"; fi
+                echo "school file is not empty"; 
+        fi
 
-	if [ -f $cool ]; then
+        if [ -f $cool ]; then
 
-        	echo "$cool is a regular file"; fi 
+                echo "$cool is a regular file";
 
-	else
+        else
 
-        	echo "$cool file does not exist"
+                echo "$cool file does not exist"
+
+        echo "$cool file does not exist"
 fi
