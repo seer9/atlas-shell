@@ -1,14 +1,22 @@
 #!/usr/bin/env bash
 #this script tells you specific info about a file.
 cool=school
+
 if [ -e $cool ]; then
+
         echo "$cool file exists"; fi
 
 if [ -s $cool ]; then
+
         echo "school file is empty"; else
+
         echo "school file is not empty"; fi
+
 if [ -f $cool ]; then
+
         echo "$cool is a regular file"; fi 
-else
+
+	else
+
         echo "$cool file does not exist"
 fi
