@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 #FIZZBUZZZZZ
-for ((_ = 1; _ <= 100; _++)); do
-    if ((_ % 3 == 0)) && ((_ % 5 == 0)); then
+for ((q = 1; q <= 100; q++)); do
+    if ((q % 3 == 0)) && ((q % 5 == 0)); then
         echo "FizzBuzz"
-    elif ((_ % 3 == 0)); then
+    elif ((q % 3 == 0)); then
         echo "Fizz"
-    elif ((_ % 5 == 0)); then
+    elif ((q % 5 == 0)); then
         echo "Buzz"
     else
-        echo "$_"
+        echo "$q"
     fi
 done
-
