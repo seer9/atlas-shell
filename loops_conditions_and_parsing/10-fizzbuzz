@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #FIZZBUZZZZZ
-for ((_ = 1; _ <= 100)); do
+for ((_ = 1; _ <= 100; _++)); do
     if ((_ % 3 == 0)) && ((_ % 5 == 0)); then
         echo "FizzBuzz"
     elif ((_ % 3 == 0)); then
@@ -9,7 +9,6 @@ for ((_ = 1; _ <= 100)); do
         echo "Buzz"
     else
         echo "$_"
-    ((_++))
     fi
 done
 
