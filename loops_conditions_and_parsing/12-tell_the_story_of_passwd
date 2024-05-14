@@ -9,8 +9,6 @@ while IFS=: read -r -a passwd; do
 
 ##awk for the different 
 		
-	user_info="$user"
+	echo "The user $user is part of the $gid gang, lives in $home_dir, and rides $shell. $uid's place is protected by the passcode x, more info about the user here: $user"
 
-	echo "The user $user is part of the $gid gang, lives in $home_dir, and rides $shell. $uid's 		place is protected by the passcode x, more info about the user here: $user_info"
-
-done < /etc/passwd	
+done < /etc/passwd		
