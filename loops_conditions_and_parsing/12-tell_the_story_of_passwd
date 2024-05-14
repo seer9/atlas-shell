@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#!/usr/bin/env bash
 ##This script is going to seperate the fields using an array with passwd.
 while IFS=: read -r -a passwd; do
 	user="${passwd[0]}"
