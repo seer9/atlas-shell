@@ -10,7 +10,7 @@ while IFS=: read -r -a passwd; do
     
     # Displaying user information
     echo "The user $user is part of the $gid gang, lives in $home_dir and rides $shell."
-    echo "$uid's place is protected by the passcode x, more info about the user here: "
-   
+    echo "$uid's place is protected by the passcode x, more info about the user here: $user_info"
+    echo 
 
 done < /etc/passwd
