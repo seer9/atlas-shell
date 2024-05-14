@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
-##display keywords in /etc/passwd
-while read -r [ '$USERNAME''$UID''$HOME_DIR' ]; do
+# Displaying specific fields from /etc/passwd using cut
 
-        echo "_$USERNAME_\n_$UID_\n_$HOME_DIR_\n"
+while IFS=: read -r line; do
+    
+    	username=$(echo "$line" | cut -d: -f1)
+    
+    	uid=$(echo "$line" | cut -d: -f3)
+    	
+    	home_dir=$(echo "$line" | cut -d: -f6)
+    
+    echo -e "$username\n$uid\n$home_dir\n"
 
 done < /etc/passwd
