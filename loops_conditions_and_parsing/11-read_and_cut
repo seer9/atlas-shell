@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ##display keywords in /etc/passwd
-while read -r [ '$username''$uid''$home_dir' ]; do
+while read -r [ '$USERNAME''$UID''$HOME_DIR' ]; do
 
-        echo "\_ $USERNAME\n \_\n$UID\_\n_$HOME_DIR\_\n"
+        echo "_$USERNAME_\n_$UID_\n_$HOME_DIR_\n"
 
 done < /etc/passwd
