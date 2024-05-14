@@ -1,16 +1,9 @@
 #!/usr/bin/env bash
 ##This script is going to seperate the fields using an array with passwd.
-while IFS=: read -r -a passwd; do
-	user="${passwd[0]}"
-	uid="${passwd[2]}"
-	gid="${passwd[3]}"
-	home_dir="${passwd[5]}"
-	shell="${passwd[6]}"
+while IFS=: read -r USERNAME PASSWORD USER_ID USER_ID_INFO HOME_DIRECTORY COMMAND; do
 
-    
+
+   
     # Displaying user information
-    echo "The user $user is part of the $gid gang, lives in $home_dir and rides $shell. "
-    echo "$uid's place is protected by the passcode x, more info about the user here: $USER_ID_INFO"
-    echo 
-
+    echo "The user $USERNAME  is part of the $GROUP_ID  gang, lives in $HOME_DIRECTORY and rides $COMMAND. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USER_ID_INFO" 
 done < /etc/passwd
